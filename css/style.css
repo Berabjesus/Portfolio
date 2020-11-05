@@ -113,6 +113,15 @@
   border-top: 3px solid black;
 }
 
+/*** 5.0 Section 2 ***/
+.section-2-projects-container {
+  height: 60vh;
+}
+
+.section-2-project-1 {
+  background: ;
+}
+
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 768px) {
