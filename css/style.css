@@ -1,0 +1,51 @@
+/*
+*  CSS TABLE OF CONTENTS
+*
+*  1.0 - Color variables
+*  2.0 - Default values
+*  3.0 - 
+*  4.0 -
+*  5.0 - 
+*/
+
+/*** 1.0 Color variables ***/
+
+:root {
+  --header: #3E3C3C;
+}
+
+/*** 2.0 Default Values ***/
+.row {
+  margin: 0;
+}
+
+.header {
+  background-color: var(--header);
+}
+
+.cborder {
+  border: 2px dashed red;
+}
+
+/*** 3.0 Header ***/
+.navbar-toggler-icon,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  width: 16px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-image: none !important;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+}
+
+.navbar-toggler-icon::after {
+  top: 4.5px;
+}
