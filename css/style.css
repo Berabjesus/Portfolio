@@ -19,15 +19,16 @@
   margin: 0;
 }
 
-.header {
-  background-color: var(--header);
-}
-
 .cborder {
   border: 2px dashed red;
 }
 
 /*** 3.0 Header ***/
+
+.header {
+  background-color: var(--header);
+}
+
 .navbar-toggler-icon,
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
