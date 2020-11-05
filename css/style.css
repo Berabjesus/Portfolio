@@ -32,6 +32,10 @@
   color: var(--text-theme-2);
 }
 
+.font-custom-1 {
+  font-family: 'Crete Round', serif;
+}
+
 .font-lg {
   font-size: 64px;
   font-family: 'Crete Round', serif;
@@ -45,10 +49,6 @@
 
 .font-sm {
   font-size: 16px;
-}
-
-.row {
-  margin: 0;
 }
 
 .cborder {
