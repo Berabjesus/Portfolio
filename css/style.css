@@ -85,23 +85,39 @@
 
 /*** 4.0 Main Container ***/
 .main {
+  padding: 0 80px;
   background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero) ;
 }
 
 .hero {
-  height: 100vh;
+  height: 95vh;
 }
 
 .side-icons {
-  
+  width: 75%;
 }
 
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 768px) {
+  .font-lg {
+    font-size: 50px;
+  }
   .main {
+    padding: 0 30px;
     background-size: 350px;
     background-position-x: 55vw;
     background-position-y: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .side-icons {
+    position: fixed;
+    width: 60px;
+    left: 0;
+  }
+  .side-icons a {
+    margin: 0 0 1.5rem 0;
   }
 }
