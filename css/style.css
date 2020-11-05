@@ -51,6 +51,10 @@
   font-size: 16px;
 }
 
+.p-x-md-120 {
+  padding: 0 120px;
+}
+
 .cborder {
   border: 2px dashed red;
 }
@@ -85,7 +89,6 @@
 
 /*** 4.0 Main Container ***/
 .main {
-  padding: 0 80px;
   background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero) ;
 }
 
@@ -97,18 +100,37 @@
   width: 75%;
 }
 
+/*** 4.0 Section 1 ***/
+
+.section-1-header::after {
+  content: '';
+  flex: 1 1 0;
+  margin: 0 0 0 1rem;
+  border-top: 3px solid black;
+}
+
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 768px) {
   .font-lg {
     font-size: 50px;
   }
+
+  .p-x-sm-30 {
+    padding: 0 20px;
+  }
+
   .main {
-    padding: 0 30px;
     background-size: 350px;
     background-position-x: 55vw;
     background-position-y: 250px;
   }
+
+  .section-1-header::after {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
