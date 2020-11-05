@@ -69,6 +69,8 @@
 
 @media screen and (max-width: 768px) {
   .main {
-    background-position-x: 40vw;
+    background-size: 350px;
+    background-position-x: 55vw;
+    background-position-y: 250px;
   }
 }
