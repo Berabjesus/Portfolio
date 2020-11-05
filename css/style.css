@@ -12,9 +12,14 @@
 
 :root {
   --header: #3E3C3C;
+  --hero: #1C1A19;
 }
 
 /*** 2.0 Default Values ***/
+.bg-hero {
+  background-color: var(--hero);
+}
+
 .row {
   margin: 0;
 }
@@ -53,10 +58,7 @@
 
 /*** 4.0 Main Container ***/
 .main {
-  background: url("../assets/svgs/Illustration-header.svg") no-repeat ;
-  background-position-x: 58vw;
-  background-position-y: -3vh;
-  background-attachment: scroll;
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero) ;
 }
 
 .hero {
