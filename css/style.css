@@ -50,3 +50,23 @@
 .navbar-toggler-icon::after {
   top: 4.5px;
 }
+
+/*** 4.0 Main Container ***/
+.main {
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat ;
+  background-position-x: 58vw;
+  background-position-y: -3vh;
+  background-attachment: scroll;
+}
+
+.hero {
+  height: 100vh;
+}
+
+/*** 4.0 Media Queries ***/
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-position-x: 40vw;
+  }
+}
