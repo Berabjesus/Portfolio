@@ -117,7 +117,6 @@
 .section-2-projects-container {
   position: relative;
   height: 0;
-  padding-bottom: 40%;
 }
 
 .section-2-projects-container::after {
@@ -201,5 +200,15 @@
   }
   .side-icons a {
     margin: 0 0 1.5rem 0;
+  }
+
+  .section-2-projects-container {
+    padding-bottom: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-2-projects-container {
+    padding-bottom: 40%;
   }
 }

@@ -90,15 +90,15 @@
             </div>
 
             <!-- Section one modal -->
-            <button type="button" class="btn bg-theme-1 font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModal">
+            <button type="button" class="btn bg-theme-1 font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModalMain">
               See the Project
             </button>
-            <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+            <div class="modal fade" id="portfolioModalMain" tabindex="-1" role="dialog" aria-labelledby="portfolioModalMainLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <div class="w-100">
-                      <h5 class="modal-title" id="portfolioModalLabel">Ethiopia on Rails</h5>
+                      <h5 class="modal-title" id="portfolioModalMainLabel">Ethiopia on Rails</h5>
                       <div class="mt-4 ">
                         <ul class="d-flex">
                           <li class="border border-dark p-1 mb-2 mr-2">
@@ -150,13 +150,14 @@
 
   <!-- Section Two -->
   <section class="container-fluid p-x-sm-20 p-x-md-120">
-    <div class="container d-flex flex-wrap px-0">
+    <div class="container d-flex flex-wrap justify-content-between px-0">
+      <!-- Project one -->
       <div class="col-12 col-md-6 col-lg-4 d-flex flex-column section-2-projects-container hover">
         <figure class="section-2-image-container h-100 overflow-hidden">
           <img src="./assets/images/epayJPG.JPG" alt="" class="w-100 h-100">
         </figure>
         <div class="section-2-description px-1 text-white">
-          <h2 class="font-lg text-center">Et Pay</h2
+          <h2 class="h1 font-custom-1 text-center">Et Pay</h2
           <p class="font-sm">A service payment website where users can sign up, get a confirmation email, login and access payment interfaces.</p>
           <div class="mt-4">
             <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
@@ -165,10 +166,10 @@
               </li>
               <li class="border border-dark p-1 mb-2 bg-secondary">
                 <p>Javascript</p>
+              </li>
               <li class="border border-dark p-1 mb-2 bg-secondary">
                 <p>jQuery</p>
               </li>  
-              </li>
               <li class="border border-dark p-1 mb-2 bg-secondary">
                 <p>HTML</p>
               </li>
@@ -181,10 +182,144 @@
             </ul>
           </div>
         </div>
-        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModal">
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModalProjectOne">
           See the Project
         </button>
+        <!-- Project one modal -->
+        <div class="modal fade" id="portfolioModalProjectOne" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectOneLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectOneLabel">Et Pay</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-2">
+                        <p>PHP</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-2">
+                        <p>Javascript</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-2">
+                        <p>jQuery</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-2">
+                        <p>Bootstrap</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-2">
+                        <p>HTML and CSS</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/epay1.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    This is my very first big project. Having gone through learning the MVC pattern, PHP and Javascript by myself, I decided to create a virtual service payment webiste where users can sign up, log in and pay for services using debit card. The payment end is not impelmented since there is no such system integration available locally. 
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://et-pay.000webhostapp.com/" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                    <a href="#" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project one modal ends here -->
       </div>
+      <!-- Project one ends here -->
+
+            <!-- Project two -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column section-2-projects-container hover">
+              <figure class="section-2-image-container h-100 overflow-hidden">
+                <img src="./assets/images/epayJPG.JPG" alt="" class="w-100 h-100">
+              </figure>
+              <div class="section-2-description px-1 text-white">
+                <h2 class="h1 font-custom-1 text-center">Football Data Web Scraper</h2
+                <p class="font-sm">A web scraper for Football statistics using Nokogiri Gem to scrape HTML data and parse it into Json format</p>
+                <div class="mt-4">
+                  <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+                    <li class="border border-dark p-1 mb-2 bg-secondary">
+                      <p>Ruby</p>
+                    </li>
+                    <li class="border border-dark p-1 mb-2 bg-secondary">
+                      <p>Nokogiri Gem</p>
+                    </li>
+                    <li class="border border-dark p-1 mb-2 bg-secondary">
+                      <p>Open Uri gem</p>
+                    </li>
+                    <li class="border border-dark p-1 mb-2 bg-secondary">
+                      <p>Rubocop</p>
+                    </li>
+                    <li class="border border-dark p-1 mb-2 bg-secondary">
+                      <p>Rspec</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModalProjectTwo">
+                See the Project
+              </button>
+              <!-- Project two modal -->
+              <div class="modal fade" id="portfolioModalProjectTwo" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectTwoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="w-100">
+                        <h5 class="modal-title" id="portfolioModalProjectTwoLabel">Football Data Web Scraper</h5>
+                        <div class="mt-4 ">
+                          <ul class="d-flex">
+                            <li class="border border-dark p-1 mb-2 bg-secondary">
+                              <p>Ruby</p>
+                            </li>
+                            <li class="border border-dark p-1 mb-2 bg-secondary">
+                              <p>Nokogiri Gem</p>
+                            </li>
+                            <li class="border border-dark p-1 mb-2 bg-secondary">
+                              <p>Open Uri gem</p>
+                            </li>
+                            <li class="border border-dark p-1 mb-2 bg-secondary">
+                              <p>Rubocop</p>
+                            </li>
+                            <li class="border border-dark p-1 mb-2 bg-secondary">
+                              <p>Rspec</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>                    
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body row">
+                      <div class="col-12 col-lg-7 px-0 ">
+                        <img class="img-fluid border" src="./assets/images/epay1.JPG" alt="Ethiopia on Rails picture">
+                      </div>
+                      <div class="col-12 col-md-5">
+                        <div>
+                          This is my very first big project. Having gone through learning the MVC pattern, PHP and Javascript by myself, I decided to create a virtual service payment webiste where users can sign up, log in and pay for services using debit card. The payment end is not impelmented since there is no such system integration available locally. 
+                        </div>
+                        <div class="mt-3">
+                          <a href="https://et-pay.000webhostapp.com/" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                          <a href="#" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project two modal ends here -->
+            </div>
+            <!-- Project two ends here -->
+
     </div>
   </section>
 
