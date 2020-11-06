@@ -59,6 +59,10 @@
   padding: 0 120px;
 }
 
+.h1 {
+  font-size: 3vw !important;
+}
+
 .cborder {
   border: 2px dashed red;
 }
@@ -170,6 +174,16 @@
 
 /*** 7.0 Media Queries ***/
 
+@media screen and (max-width: 574px) {
+  .h1 {
+    font-size: 6vw !important;
+  }
+
+  .font-sm {
+    font-size: 4vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .font-lg {
     font-size: 50px;
@@ -192,6 +206,14 @@
 
   .section-2-projects-container {
     padding-bottom: 75%;
+  }
+
+  .section-2-custom-width {
+    width: 100%;
+  }
+
+  .section-2-projects-container::after {
+    width: 100%;
   }
 
 }
