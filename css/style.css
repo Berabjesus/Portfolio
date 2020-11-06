@@ -116,10 +116,12 @@
 /*** 5.0 Section 2 ***/
 .section-2-projects-container {
   height: 60vh;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 .section-2-project-1 {
-  background: ;
+  background: url("../assets/images/epay1.JPG") no-repeat 0 0;
+  background-size: cover;
 }
 
 /*** 7.0 Media Queries ***/
