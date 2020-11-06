@@ -122,7 +122,7 @@
 .section-2-projects-container::after {
   position: absolute;
   content: '';
-  width: 100%;
+  width: 95%;
   height: 100%;
   left: 0;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
@@ -162,6 +162,10 @@
 
 .hover:hover .section-2-description {
   display: none;
+}
+
+.section-2-custom-width {
+  width: 95%;
 }
 
 /*** 7.0 Media Queries ***/
