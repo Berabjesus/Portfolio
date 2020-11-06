@@ -60,7 +60,7 @@
 }
 
 .h1 {
-  font-size: 3vw !important;
+  font-size: 2.5vw !important;
 }
 
 .cborder {
@@ -121,6 +121,7 @@
 .section-2-projects-container {
   position: relative;
   height: 0;
+  overflow-y: hidden;
 }
 
 .section-2-projects-container::after {
@@ -175,16 +176,17 @@
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
+  .font-sm {
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
   .h1 {
     font-size: 6vw !important;
   }
 
-  .font-sm {
-    font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .font-lg {
     font-size: 50px;
   }
