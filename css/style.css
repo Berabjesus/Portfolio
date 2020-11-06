@@ -178,6 +178,7 @@
   background: url("../assets/svgs/illustration-about\ me.svg") no-repeat 62vw, var(--hero) ;
 }
 
+
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
