@@ -115,18 +115,25 @@
 
 /*** 5.0 Section 2 ***/
 .section-2-projects-container {
-  height: 60vh;
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  position: relative;
+  height: 0;
+  padding-bottom: 40%;
 }
 
 .section-2-project-1 {
-  background: url("../assets/images/epay1.JPG") no-repeat 0 0;
+  /* background: url("../assets/images/epay1.JPG") no-repeat 0 0; */
+  /* background-size: cover; */
+  background-image: url("../assets/images/epay1.JPG");
   background-size: cover;
+}
+
+.lin {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url();
 }
 
 /*** 7.0 Media Queries ***/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .font-lg {
     font-size: 50px;
   }
@@ -144,6 +151,10 @@
   .section-1-header::after {
     width: 100%;
     margin: 2rem 0 0 0;
+  }
+
+  .section-2-projects-container {
+    padding-bottom: 65%;
   }
 
 }
