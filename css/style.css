@@ -52,7 +52,7 @@
 }
 
 .font-sm {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .p-x-md-120 {
@@ -130,7 +130,7 @@
   width: 95%;
   height: 100%;
   left: 0;
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  background: linear-gradient(179.35deg, rgba(148, 112, 59, 0.37) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 .section-2-image-container {
@@ -173,13 +173,17 @@
   width: 95%;
 }
 
+/*** 6.0 Section 3 ***/
+.section-3 {
+  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat 62vw, var(--hero) ;
+}
+
 /*** 7.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
   .font-sm {
-    font-size: 5vw;
+    font-size: 4vw;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -195,7 +199,8 @@
     padding: 0 20px;
   }
 
-  .main {
+  .main, 
+  .section-3 {
     background-size: 350px;
     background-position-x: 55vw;
     background-position-y: 250px;
@@ -218,6 +223,11 @@
     width: 100%;
   }
 
+  .section-3 {
+    background-size: 350px;
+    background-position-x: 60vw;
+    background-position-y: 400px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -231,12 +241,12 @@
   }
 
   .section-2-projects-container {
-    padding-bottom: 60%;
+    padding-bottom: 55%;
   }
 }
 
 @media screen and (min-width: 992px) {
   .section-2-projects-container {
-    padding-bottom: 40%;
+    padding-bottom: 35%;
   }
 }
