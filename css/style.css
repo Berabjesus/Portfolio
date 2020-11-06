@@ -120,15 +120,49 @@
   padding-bottom: 40%;
 }
 
-.section-2-project-1 {
-  /* background: url("../assets/images/epay1.JPG") no-repeat 0 0; */
-  /* background-size: cover; */
-  background-image: url("../assets/images/epay1.JPG");
-  background-size: cover;
+.section-2-projects-container::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
-.lin {
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url();
+.section-2-image-container {
+  position: absolute;
+  left: 0;
+}
+
+.section-2-image-container img {
+  object-position: top;
+}
+
+.section-2-description, 
+.hidden-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.hidden-btn {
+  left: unset;
+  display: none;
+}
+
+.hover:hover::after {
+  background: unset !important;
+  border: 1px solid black;
+}
+
+.hover:hover .hidden-btn {
+  display: initial;
+  align-self: center;
+}
+
+.hover:hover .section-2-description {
+  display: none;
 }
 
 /*** 7.0 Media Queries ***/
