@@ -5,9 +5,10 @@
 *  2.0 - Default values
 *  3.0 - Header
 *  4.0 - Main Container 
-*  5.0 - 
-*  6.0 - 
-*  7.0 - Media Queries
+*  5.0 - Section 1
+*  6.0 - Section 2
+*  7.0 - Section 3
+*  9.0 - Media Queries
 */
 
 /*** 1.0 Color variables ***/
@@ -108,7 +109,7 @@
   width: 75%;
 }
 
-/*** 4.0 Section 1 ***/
+/*** 5.0 Section 1 ***/
 
 .section-1-header::after {
   content: '';
@@ -117,7 +118,7 @@
   border-top: 3px solid black;
 }
 
-/*** 5.0 Section 2 ***/
+/*** 6.0 Section 2 ***/
 .section-2-projects-container {
   position: relative;
   height: 0;
@@ -130,7 +131,7 @@
   width: 95%;
   height: 100%;
   left: 0;
-  background: linear-gradient(179.35deg, rgba(148, 112, 59, 0.37) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  background: linear-gradient(179.35deg, rgba(168, 162, 129, 0.445) 0.85%, rgba(31, 30, 30, 0.89) 84%);
 }
 
 .section-2-image-container {
@@ -173,13 +174,27 @@
   width: 95%;
 }
 
-/*** 6.0 Section 3 ***/
+/*** 7.0 Section 3 ***/
 .section-3 {
-  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat 62vw, var(--hero) ;
+  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero) ;
+  background-position: 63vw 10vh;
+}
+
+.about {
+  min-height: 100vh;
+}
+
+.about-desc-container {
+  margin: 120px 0 0 0;
+}
+
+.about-list-container {
+  margin: 10vw 0 0 0;
+  border-top: 3px solid white;
 }
 
 
-/*** 7.0 Media Queries ***/
+/*** 9.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
   .font-sm {
@@ -200,8 +215,7 @@
     padding: 0 20px;
   }
 
-  .main, 
-  .section-3 {
+  .main {
     background-size: 350px;
     background-position-x: 55vw;
     background-position-y: 250px;
@@ -228,6 +242,10 @@
     background-size: 350px;
     background-position-x: 60vw;
     background-position-y: 400px;
+  }
+
+  .about-list-container {
+    margin: 40vw 0 0 0;
   }
 }
 
