@@ -251,8 +251,7 @@
 
   .section-3 {
     background-size: 350px;
-    background-position-x: 60vw;
-    background-position-y: 400px;
+    background-position: 60vw 60vw;
   }
 
   .about-list-container {
