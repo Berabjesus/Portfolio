@@ -222,6 +222,20 @@
     padding: 0 20px;
   }
 
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 0 0 1rem 0;
+    font-size: 6vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+  }
+
+  .nav-item:last-of-type {
+    display: none;
+  }
+
   .main {
     background-size: 350px;
     background-position-x: 55vw;
