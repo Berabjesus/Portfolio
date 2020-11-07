@@ -4,7 +4,7 @@
 *  1.0 - Color variables
 *  2.0 - Default values
 *  3.0 - Header
-*  4.0 - Main Container 
+*  4.0 - Main Container
 *  5.0 - Section 1
 *  6.0 - Section 2
 *  7.0 - Section 3
@@ -14,8 +14,8 @@
 /*** 1.0 Color variables ***/
 
 :root {
-  --header: #3E3C3C;
-  --hero: #1C1A19;
+  --header: #3e3c3c;
+  --hero: #1c1a19;
   --theme-1: #f55a00;
   --text-theme-2: #f4f5f7;
 }
@@ -102,7 +102,7 @@
 
 /*** 4.0 Main Container ***/
 .main {
-  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero) ;
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero);
 }
 
 .hero {
@@ -147,7 +147,7 @@
   object-position: top;
 }
 
-.section-2-description, 
+.section-2-description,
 .hidden-btn {
   position: absolute;
   left: 0;
@@ -182,7 +182,7 @@
 
 /*** 7.0 Section 3 ***/
 .section-3 {
-  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero) ;
+  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero);
   background-position: 63vw 11vh;
 }
 
@@ -279,6 +279,7 @@
     width: 60px;
     left: 0;
   }
+
   .side-icons a {
     margin: 0 0 1.5rem 0;
   }
