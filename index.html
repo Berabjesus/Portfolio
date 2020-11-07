@@ -1,37 +1,875 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Bereket Beshane | Portfolio</title>
+</head>
+<body>
+  <header class="row text-white header py-2">
+    <nav class="container-md navbar navbar-expand-md d-flex w-100 align-items-center py-0">
+      <a class="font-weight-bold p-0" href="#">Bereket A. Beshane </a>
+      <button class="navbar-toggler border-0 p-0 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon position-relative d-flex flex-column"></span>
+      </button>
+      <div class="collapse navbar-collapse row justify-content-md-end pt-4 py-md-0" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link py-0 mr-md-3 text-white" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-0 mr-md-3 text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-0 mr-md-3 text-white" href="#contact">Contact</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link py-0 text-white" href="#contact"><img src="./assets/svgs/IconMail.svg" alt=""></a>
+          </li>  
+        </ul>
+      </div> 
+    </nav>
+  </header>
+  <!-- Main container for the hero -->
+  <main class="container-fluid row flex-column mx-0 h-auto p-x-sm-20 p-x-md-120 main">
+    <div class="container row flex-column justify-content-center align-self-center hero px-0 ">
+      <div class="align-self-center d-flex flex-column">
+        <h2 class="font-lg text-color-1">Hi There.</h2>
+        <h2 class="font-lg text-color-1">I am Bereket</h2>
+        <h4 class="font-md text-white my-3">I’m a Software Developer</h4>
+        <p class="col-11 col-md-7 col-lg-5 font-sm text-color-2 px-0 mx-0 my-3">
+          I can help you build a good looking website, feature or application. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>  
+      </div>
+      <aside class="side-icons d-flex justify-content-around flex-md-column align-items-md-center my-1 ">
+        <a href="https://github.com/Berabjesus" target="_blank"> <img src="./assets/svgs/github.svg" alt="contact"></a>
+        <a href="https://www.linkedin.com/in/bereketbeshane/" target="_blank"><img src="./assets/svgs/Linkedinicon.svg" alt="contact"></a>
+        <a href="#"><img src="./assets/svgs/angellist.svg" alt="contact"></a>
+        <a href="https://twitter.com/bereket_ababu_b" target="_blank"><img src="./assets/svgs/twitter.svg" alt="contact"></a>
+        <a href="https://medium.com/@berabjesus" target="_blank"><img src="./assets/svgs/medium.svg" alt="contact"></a>
+      </aside>
+    </div>
+  </main>
 
-You can use the [editor on GitHub](https://github.com/Berabjesus/Portfolio/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+  <!-- Section one -->
+  <section class="container-fluid mt-4 py-5 p-x-sm-20 p-x-md-120" id="portfolio">
+    <div class="container px-0">
+      <div class="d-flex px-0">
+        <h2 class="d-flex flex-column flex-md-row flex-grow-1 flex-shrink-0 align-items-center h2 position-relative font-custom-1 section-1-header">My Recent Works</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 col-lg-7 px-0 ">
+          <img class="img-fluid border" src="./assets/images/ss1.JPG" alt="Ethiopia on Rails picture">
+        </div>
+        <div class="card col-12 col-lg-5 pt-3 py-lg-0 mt-lg-0 mx-0 px-0 border-0 font-sm">
+          <div class="card-body py-0 mt-0 px-0 pl-lg-3">
+            <h2 class="card-title h2 font-custom-1">Ethiopia on Rails</h2>
+            <p class="card-text">A website that allows user to <strong>view</strong>, <strong>write</strong>, <strong>edit</strong> and <strong>search</strong> article contents about Ethiopia. It also has a login feature that allows users to log in or sign up with <em>GitHub</em> or <em>Google</em>. Users can also get the current time and weather information in the capital city.</p>
+            <div class="mt-4">
+              <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+                <li class="border border-dark p-1 mb-2 ">
+                  <p>HTML</p>
+                </li>
+                <li class="border border-dark p-1 mb-2">
+                  <p>CSS</p>
+                </li>
+                <li class="border border-dark p-1 mb-2">
+                  <p>Ruby on Rails</p>
+                </li>
+                <li class="border border-dark p-1 mb-2">
+                  Bootstrap
+                </li>
+              </ul>
+            </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            <!-- Section one modal -->
+            <button type="button" class="btn bg-theme-1 font-sm text-white mt-2" data-toggle="modal" data-target="#portfolioModalMain">
+              See the Project
+            </button>
+            <div class="modal fade" id="portfolioModalMain" tabindex="-1" role="dialog" aria-labelledby="portfolioModalMainLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="w-100">
+                      <h5 class="modal-title" id="portfolioModalMainLabel">Ethiopia on Rails</h5>
+                      <div class="mt-4 ">
+                        <ul class="d-flex">
+                          <li class="border border-dark p-1 mb-2 mr-2">
+                            <p>Ruby on Rails</p>
+                          </li>
+                          <li class="border border-dark p-1 mb-2 mr-2">
+                            <p>HTML</p>
+                          </li>
+                          <li class="border border-dark p-1 mb-2 mr-2">
+                            <p>CSS</p>
+                          </li>
+                          <li class="border border-dark p-1 mb-2 mr-2">
+                            Bootstrap
+                          </li>
+                          <li class="border border-dark p-1 mb-2 mr-2">
+                            Omniauth
+                          </li>
+                        </ul>
+                      </div>
+                    </div>                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body row">
+                    <div class="col-12 col-lg-7 px-0 ">
+                      <img class="img-fluid border" src="./assets/images/ss2.JPG" alt="Ethiopia on Rails picture">
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div>
+                        <p>
+                        This is a Ruby on Rails project done in the Ruby on Rails curriculum at <a href="https://www.microverse.org/" class="btn-link">Microverse</a>. I have personalized it to be about my country Ethiopia where users can access different informations about Ethiopia.
+                        </p>
+                      </div>
+                      <div class="mt-3">
+                        <a href="https://et-on-rails.herokuapp.com/" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                        <a href="https://github.com/Berabjesus/Ethiopia-on-Rails" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section one modal ends here -->
 
-### Markdown
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  <!-- Section Two -->
+  <section class="container-fluid mb-5 p-x-sm-20 p-x-md-120">
+    <div class="container d-flex flex-wrap justify-content-between px-0">
+      <!-- Project one -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/epayJPG.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width ">
+          <h2 class="h1 font-custom-1 text-center">Et Pay</h2>
+          <p class="font-sm text-center">A service payment website where users can sign up, get a confirmation email, login and access payment interfaces.</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>PHP</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Javascript</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>jQuery</p>
+              </li>  
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>HTML</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>CSS</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                Bootstrap
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectOne">
+          See the Project
+        </button>
+        <!-- Project one modal -->
+        <div class="modal fade" id="portfolioModalProjectOne" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectOneLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectOneLabel">Et Pay</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>PHP</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Javascript</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>jQuery</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Bootstrap</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>HTML and CSS</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/epay1.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                    This is my very first big project. Having gone through learning the MVC pattern, PHP and Javascript by myself, I decided to create a virtual service payment webiste where users can sign up, log in and pay for services using debit card. The payment end is not impelmented since there is no such system integration available locally. 
+                    </p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://et-pay.000webhostapp.com/" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                    <a href="#" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project one modal ends here -->
+      </div>
+      <!-- Project one ends here -->
 
-```markdown
-Syntax highlighted code block
+      <!-- Project two -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/ws1.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width">
+          <h2 class="h1 font-custom-1 text-center">Football Data Web Scraper</h2>
+          <p class="font-sm text-center">A web scraper for Football statistics using Nokogiri Gem to scrape HTML data and parse it into Json format</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Ruby</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Nokogiri Gem</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Rubocop</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Rspec</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectTwo">
+          See the Project
+        </button>
+        <!-- Project two modal -->
+        <div class="modal fade" id="portfolioModalProjectTwo" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectTwoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectTwoLabel">Football Data Web Scraper</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Ruby</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Nokogiri Gem</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Open Uri gem</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Rubocop</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Rspec</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/ws2.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                      This is a Ruby capstone project at <a href="https://www.microverse.org/" class="btn-link">Microverse</a>. It is made to scrap football statistics from the website <a href="https://fbref.com" target="_blank" class="btn-link">fbref.com</a> and parse it to a json file. It can scrap league data from five different leagues in Europe. 
+                      Features include: -
+                    </p>
+                    <ul class="list-group mt-2">
+                      <li class="list-group-item">
+                        See table standings in each league
+                      </li>
+                      <li class="list-group-item">
+                        See player stats in each team
+                      </li>
+                      <li class="list-group-item">
+                        The Application can make a suggestion of best players based on the stats.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://github.com/Berabjesus/Scrap_League-Web-Scraper" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project two modal ends here -->
+      </div>
+      <!-- Project two ends here -->
 
-# Header 1
-## Header 2
-### Header 3
+      <!-- Project Three -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/rm1.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width ">
+          <h2 class="h1 font-custom-1 text-center">Rumor Mill</h2>
+          <p class="font-sm text-center">A Ruby on Rails wep application that lets user post rumors and gossips. Its built with Devise gem to authenticate users</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Ruby</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Ruby On Rails</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Devise</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Bootstrap</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>HTML & CSS</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectThree">
+          See the Project
+        </button>
+        <!-- Project Three modal -->
+        <div class="modal fade" id="portfolioModalProjectThree" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectThreeLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectThreeLabel">Rumor Mill</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Ruby</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Ruby On Rails</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Devise</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Bootstrap</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>HTML & CSS</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/rm2.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                      This is a Ruby on Rails Milestone project at <a href="https://www.microverse.org/" class="btn-link">Microverse</a>. It is made to allow users post rumors and gossips after signing in with a proper username, email and password.
+                    </p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://pacific-depths-76495.herokuapp.com/" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>    
+                    <a href="https://github.com/Berabjesus/Members_Only" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Three modal ends here -->
+      </div>
+      <!-- Project Three ends here -->
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+      <!-- Project Four -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/os1.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width ">
+          <h2 class="h1 font-custom-1 text-center">Online shop for Programming courses</h2>
+          <p class="font-sm text-center">A website made to implement online shopping for programming and computer science courses</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>HTML</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>CSS</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Bootstrap</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectFour">
+          See the Project
+        </button>
+        <!-- Project Four modal -->
+        <div class="modal fade" id="portfolioModalProjectFour" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectFourLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectFourLabel">Online shop for Programming courses</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Bootstrap</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>HTML and CSS</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/os2.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                      A Microverse HTML and CSS capstone project created to integrate modern HTML and CSS techniques and framework like bootstrap. 
+                    </p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/23703264ba8c9417d8fa14cf99738ca2c48c0e9f/index.html" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                    <a href="https://github.com/Berabjesus/Online-shop-for-programming-courses" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Four modal ends here -->
+      </div>
+      <!-- Project Four ends here -->
 
-**Bold** and _Italic_ and `Code` text
+      <!-- Project Five -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/tw1.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width">
+          <h2 class="h1 font-custom-1 text-center">Tweeter Mini Clone</h2>
+          <p class="font-sm text-center">A Ruby on Rails wb application made to recreate tweeter with some of its original functionalities</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Ruby on Rails</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>HTML</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>CSS</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>Bootstrap</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectFive">
+          See the Project
+        </button>
+        <!-- Project Five modal -->
+        <div class="modal fade" id="portfolioModalProjectFive" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectFiveLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectFiveLabel">Tweeter Mini Clone</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Ruby on Rails</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>HTML</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>CSS</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>Bootstrap</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/tw2.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                      This is a Ruby on Rails milestone project at <a href="https://www.microverse.org/" class="btn-link">Microverse</a>. It is made to recreate tweeter with some of its functionalities and user interface. Users can login or sign up to create and read tweets.
+                    </p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://fierce-tundra-31623.herokuapp.com/tweets" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>
+                    <a href="https://github.com/Berabjesus/Twitter-Clone" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Five modal ends here -->
+      </div>
+      <!-- Project Five ends here -->
 
-[Link](url) and ![Image](src)
-```
+      <!-- Project Six -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mt-3 section-2-projects-container hover">
+        <figure class="section-2-image-container h-100 overflow-hidden section-2-custom-width ">
+          <img src="./assets/images/nw1.JPG" alt="" class="w-100 h-100">
+        </figure>
+        <div class="section-2-description px-1 text-white section-2-custom-width ">
+          <h2 class="h1 font-custom-1 text-center">Newsweek.com Clone</h2>
+          <p class="font-sm text-center">A clone of <a href="https://newsweek.com">Newsweek.com</a> website using front end technologies</p>
+          <div class="mt-4">
+            <ul class="d-flex flex-wrap justify-content-around justify-content-lg-between">
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>HTML</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>CSS Grid</p>
+              </li>
+              <li class="border border-dark p-1 mb-2 bg-secondary">
+                <p>CSS FlexBox</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn bg-theme-1 hidden-btn font-sm text-white" data-toggle="modal" data-target="#portfolioModalProjectSix">
+          See the Project
+        </button>
+        <!-- Project Six modal -->
+        <div class="modal fade" id="portfolioModalProjectSix" tabindex="-1" role="dialog" aria-labelledby="portfolioModalProjectSixLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="w-100">
+                  <h5 class="modal-title" id="portfolioModalProjectSixLabel">Newsweek.com Clone</h5>
+                  <div class="mt-4 ">
+                    <ul class="d-flex">
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>HTML</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>CSS Grid</p>
+                      </li>
+                      <li class="border border-dark p-1 mb-2 mr-1">
+                        <p>CSS FlexBox</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>                    
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-12 col-lg-7 px-0 ">
+                  <img class="img-fluid border" src="./assets/images/nw2.JPG" alt="Ethiopia on Rails picture">
+                </div>
+                <div class="col-12 col-md-5">
+                  <div>
+                    <p>
+                      This is HTML and CSS Milestone project at <a href="https://www.microverse.org/" class="btn-link">Microverse</a>. It is a website that shows the complete clone of <a href="https://newsweek.com">Newsweek.com</a>.
+                    </p>
+                  </div>
+                  <div class="mt-3">
+                    <a href="https://rawcdn.githack.com/Berabjesus/Newsweek.com-clone/e2ed3671f314a0fb63476c3e456316dc2fb95380/index.html" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Live</a>    
+                    <a href="https://github.com/Berabjesus/Newsweek.com-clone" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2">See Source Code</a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Six modal ends here -->
+      </div>
+      <!-- Project Six ends here -->
+    </div>
+  </section>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  <section class="container-fluid row flex-column mx-0 h-auto p-x-sm-20 p-x-md-120 section-3 " id="about">
+    <div class="container row flex-column justify-content-center align-self-center about px-0 ">
+      <div class="about-desc-container d-flex flex-column">
+        <h2 class="font-lg text-color-1">About Me</h2>
+        <p class="col-11 col-md-7 col-lg-5 font-sm text-color-2 px-0 mx-0 my-3">
+          Hello again, a little bit about myself. I am born and raised in Ethiopia, Addis Ababa. I have a bachelor's degree in a non-IT field. I have taken a bridging course for a Masters Degree in Software Engineering, and I am currently in the Microverse community finishing up my full-stack web development remote Bootcamp. 
+        </p>
+        <a href="https://docs.google.com/document/d/1LMZZ0H7QXgrP9-9tW6mr7xpIxU25RegcsdReqa0xAac/edit?usp=sharing" target="_blank" class="btn bg-theme-1 font-sm text-white mt-2 align-self-start">Get My Resume</a>    
+      </div>
+      <div class="row col-12 px-0 about-list-container">
+        <div class="col-12 col-md-4 px-0 mt-3 mt-md-0">
+          <h1 class="font-md text-white"><em class="text-color-1">&#9830;</em> Languages</h1>
+          <ul class="text-white h6 font-custom-2">
+            <li class="border-bottom py-4 w-75">
+              <p>
+                HTML and CSS
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  <p>Personal Assesment 90%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Javascript
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                  <p>Personal Assesment 75%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Ruby
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                  <p>Personal Assesment 80%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                SQL (PostgreSQL)
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width:83%">
+                  <p>Personal Assesment 83%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                PHP
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  <p>Personal Assesment 60%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Java
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                  <p>Personal Assesment 55%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                C++
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                  <p>40%</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-### Jekyll Themes
+        <div class="col-12 col-md-4 px-0 mt-3 mt-md-0">
+          <h1 class="font-md text-white"><em class="text-color-1">&#9733;</em> Frameworks and Libraries</h1>
+          <ul class="text-white h6 font-custom-2">
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Bootstrap
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                  <p>Personal Assesment 95%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Ruby on Rails
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                  <p>Personal Assesment 80%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                React
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                  <p>Personal Assesment 50%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                jQuery
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  <p>Personal Assesment 60%</p>
+                </div>
+              </div>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Rspec
+              </p>
+              <div class="progress mt-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  <p>Personal Assesment 70%</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Berabjesus/Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <div class="col-12 col-md-4 px-0 mt-3 mt-md-0">
+          <h1 class="font-md text-white"><em class="text-color-1">&#9741;</em> Skills</h1>
+          <ul class="text-white h6 font-custom-2">
+            <li class="border-bottom py-4 w-75">
+              <p>
+                GitHub
+              </p>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Computer Networks
+              </p>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Command Line Terminals
+              </p>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Article Writing
+              </p>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Linux OS
+              </p>
+            </li>
+            <li class="border-bottom py-4 w-75">
+              <p>
+                Windows OS
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  <section class="container-fluid row flex-column mx-0 h-auto p-x-sm-20 p-x-md-120" id="contact">
+    <div class="container align-self-center px-0 row py-5">
+      <div class="col-12 col-md-4 font-md py-2 mb-3 mb-md-0 mx-auto">
+        <h3 class="font-custom-1">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h3>
+      </div>
+      <div class="col-12 col-md-8">
+        <h2 class="font-custom-1 text-break mb-3">Send e-mail to Berabjesus@gmail.com:</h2>
+          <form class="form-horizontal" action="mailto:Berabjesus@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label class="control-label col-sm-2 px-0" for="name">Name:</label>
+              <div class="col-sm-10 px-0">
+                <input type="text" class="form-control" id="name" placeholder="Enter Name Here" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 px-0" for="mail">E-mail:</label>
+              <div class="col-sm-10 px-0">
+                <input type="email" class="form-control" id="mail" placeholder="Enter Email Here" name="mail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 px-0" for="comment">Comment:</label>
+              <div class="col-sm-10 px-0">
+                <input type="text" class="form-control" id="comment" placeholder="Enter comment Here" name="comment" size="50">
+              </div>
+            </div>
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10 px-0">
+                <input type="submit" value="Send" class="btn text-white bg-theme-1">
+                <input type="reset" value="Reset" class="btn text-white bg-theme-1">
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </section>
+  <footer class="border-top border-dark d-flex justify-content-center mb-3">
+    <a href="https://github.com/Berabjesus" target="_blank" class="mr-4"> <img src="./assets/svgs/github.svg" alt="contact"></a>
+    <a href="https://www.linkedin.com/in/bereketbeshane/" target="_blank" class="mr-4"><img src="./assets/svgs/Linkedinicon.svg" alt="contact"></a>
+    <a href="#"><img src="./assets/svgs/angellist.svg" alt="contact" class="mr-4"></a>
+    <a href="https://twitter.com/bereket_ababu_b" target="_blank" class="mr-4"><img src="./assets/svgs/twitter.svg" alt="contact"></a>
+    <a href="https://medium.com/@berabjesus" target="_blank" class="mr-4"><img src="./assets/svgs/medium.svg" alt="contact"></a>
+  </footer>
+  <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" data-turbolinks-track="reload"></script>
+</body>
+</html>

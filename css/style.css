@@ -1,0 +1,296 @@
+/*
+*  CSS TABLE OF CONTENTS
+*
+*  1.0 - Color variables
+*  2.0 - Default values
+*  3.0 - Header
+*  4.0 - Main Container
+*  5.0 - Section 1
+*  6.0 - Section 2
+*  7.0 - Section 3
+*  9.0 - Media Queries
+*/
+
+/*** 1.0 Color variables ***/
+
+:root {
+  --header: #3e3c3c;
+  --hero: #1c1a19;
+  --theme-1: #f55a00;
+  --text-theme-2: #f4f5f7;
+}
+
+/*** 2.0 Default Values ***/
+.bg-hero {
+  background-color: var(--hero);
+}
+
+.bg-theme-1 {
+  background-color: var(--theme-1);
+}
+
+.text-color-1 {
+  color: var(--theme-1);
+}
+
+.text-color-2 {
+  color: var(--text-theme-2);
+}
+
+.font-custom-1 {
+  font-family: 'Crete Round', serif;
+}
+
+.font-custom-2 {
+  font-family: 'Inter', serif;
+}
+
+.font-lg {
+  font-size: 64px;
+  font-family: 'Crete Round', serif;
+}
+
+.font-md,
+.font-sm {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-sm {
+  font-size: 18px;
+}
+
+.p-x-md-120 {
+  padding: 0 120px;
+}
+
+.h1 {
+  font-size: 2.5vw !important;
+}
+
+.cborder {
+  border: 2px dashed red;
+}
+
+/*** 3.0 Header ***/
+
+.header {
+  background-color: var(--header);
+}
+
+.navbar-toggler-icon,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  width: 16px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-image: none !important;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+}
+
+.navbar-toggler-icon::after {
+  top: 4.5px;
+}
+
+/*** 4.0 Main Container ***/
+.main {
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero);
+}
+
+.hero {
+  height: 95vh;
+}
+
+.side-icons {
+  width: 75%;
+}
+
+/*** 5.0 Section 1 ***/
+
+.section-1-header::after {
+  content: '';
+  flex: 1 1 0;
+  margin: 0 0 0 1rem;
+  border-top: 3px solid black;
+}
+
+/*** 6.0 Section 2 ***/
+.section-2-projects-container {
+  position: relative;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.section-2-projects-container::after {
+  position: absolute;
+  content: '';
+  width: 95%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(179.35deg, rgba(168, 162, 129, 0.445) 0.85%, rgba(31, 30, 30, 0.89) 84%);
+}
+
+.section-2-image-container {
+  position: absolute;
+  left: 0;
+}
+
+.section-2-image-container img {
+  object-position: top;
+}
+
+.section-2-description,
+.hidden-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.hidden-btn {
+  left: unset;
+  display: none;
+}
+
+.hover:hover::after {
+  background: unset !important;
+  border: 1px solid black;
+}
+
+.hover:hover .hidden-btn {
+  display: initial;
+  width: 95%;
+  align-self: stretch;
+  left: 0;
+}
+
+.hover:hover .section-2-description {
+  display: none;
+}
+
+.section-2-custom-width {
+  width: 95%;
+}
+
+/*** 7.0 Section 3 ***/
+.section-3 {
+  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero);
+  background-position: 63vw 11vh;
+}
+
+.about {
+  min-height: 100vh;
+}
+
+.about-desc-container {
+  margin: 12vw 0 0 0;
+}
+
+.about-list-container {
+  margin: 10vw 0 0 0;
+  padding: 6vw;
+  border-top: 2px solid white;
+}
+
+
+/*** 9.0 Media Queries ***/
+
+@media screen and (max-width: 574px) {
+  .font-sm {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 6vw !important;
+  }
+
+  .font-lg {
+    font-size: 50px;
+  }
+
+  .p-x-sm-20 {
+    padding: 0 20px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 0 0 1rem 0;
+    font-size: 6vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+  }
+
+  .nav-item:last-of-type {
+    display: none;
+  }
+
+  .main {
+    background-size: 350px;
+    background-position-x: 55vw;
+    background-position-y: 250px;
+  }
+
+  .section-1-header::after {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+
+  .section-2-projects-container {
+    padding-bottom: 75%;
+  }
+
+  .section-2-custom-width {
+    width: 100%;
+  }
+
+  .section-2-projects-container::after {
+    width: 100%;
+  }
+
+  .hover:hover .hidden-btn {
+    width: 100%;
+  }
+
+  .section-3 {
+    background-size: 350px;
+    background-position: 60vw 60vw;
+  }
+
+  .about-list-container {
+    margin: 40vw 0 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .side-icons {
+    position: fixed;
+    width: 60px;
+    left: 0;
+  }
+
+  .side-icons a {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .section-2-projects-container {
+    padding-bottom: 55%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-2-projects-container {
+    padding-bottom: 35%;
+  }
+}
