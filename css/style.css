@@ -182,7 +182,7 @@
 
 /*** 7.0 Section 3 ***/
 .section-3 {
-  background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero);
+  background: url("../assets/svgs/illustration-aboutme.svg") no-repeat, var(--hero);
   background-position: 63vw 11vh;
 }
 
