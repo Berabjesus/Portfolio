@@ -41,6 +41,10 @@
   font-family: 'Crete Round', serif;
 }
 
+.font-custom-2 {
+  font-family: 'Inter', serif;
+}
+
 .font-lg {
   font-size: 64px;
   font-family: 'Crete Round', serif;
@@ -163,7 +167,9 @@
 
 .hover:hover .hidden-btn {
   display: initial;
-  align-self: center;
+  width: 95%;
+  align-self: stretch;
+  left: 0;
 }
 
 .hover:hover .section-2-description {
@@ -177,7 +183,7 @@
 /*** 7.0 Section 3 ***/
 .section-3 {
   background: url("../assets/svgs/illustration-about\ me.svg") no-repeat, var(--hero) ;
-  background-position: 63vw 10vh;
+  background-position: 63vw 11vh;
 }
 
 .about {
@@ -185,12 +191,13 @@
 }
 
 .about-desc-container {
-  margin: 120px 0 0 0;
+  margin: 12vw 0 0 0;
 }
 
 .about-list-container {
   margin: 10vw 0 0 0;
-  border-top: 3px solid white;
+  padding: 6vw;
+  border-top: 2px solid white;
 }
 
 
@@ -235,6 +242,10 @@
   }
 
   .section-2-projects-container::after {
+    width: 100%;
+  }
+
+  .hover:hover .hidden-btn {
     width: 100%;
   }
 
