@@ -2,5 +2,9 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }
