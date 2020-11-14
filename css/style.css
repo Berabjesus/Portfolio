@@ -68,6 +68,12 @@
   font-size: 2.5vw !important;
 }
 
+.btn-hover:hover {
+  background-color: var(--text-theme-2);
+  color: var(--hero) !important;
+  border: var(--theme-1) 3px solid;
+}
+
 .cborder {
   border: 2px dashed red;
 }
