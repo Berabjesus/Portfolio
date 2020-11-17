@@ -206,6 +206,10 @@
   border-top: 2px solid white;
 }
 
+.footer {
+  background-color: var(--header);
+}
+
 
 /*** 9.0 Media Queries ***/
 
