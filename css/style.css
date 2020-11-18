@@ -206,12 +206,14 @@
   border-top: 2px solid white;
 }
 
+/*** 8.0 footer ***/
+
 .footer {
   background-color: var(--hero);
 }
 
 
-/*** 8.0 Media Queries ***/
+/*** 9.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
   .font-sm {
