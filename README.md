@@ -19,12 +19,12 @@
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Library
-[contributors-url]: https://github.com/Berabjesus/Ethiopia-on-Rails/contributors
-[forks-shield]: https://img.shields.io/github/forks/Berabjesus/Ethiopia-on-Rails
-[forks-url]:https://github.com/Berabjesus/Ethiopia-on-Rails/network/members
-[stars-shield]: https://img.shields.io/github/stars/Berabjesus/Ethiopia-on-Rails
-[stars-url]: https://github.com/Berabjesus/Ethiopia-on-Rails/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Berabjesus/Ethiopia-on-Rails
-[issues-url]: https://github.com/Berabjesus/Ethiopia-on-Rails/issues
+[contributors-url]: https://github.com/Berabjesus/Library/contributors
+[forks-shield]: https://img.shields.io/github/forks/Berabjesus/Library
+[forks-url]:https://github.com/Berabjesus/Library/network/members
+[stars-shield]: https://img.shields.io/github/stars/Berabjesus/Library
+[stars-url]: https://github.com/Berabjesus/Library/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Berabjesus/Library
+[issues-url]: https://github.com/Berabjesus/Library/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license-url]: https://github.com/Berabjesus/Ethiopia-on-Rails/development/LICENSE
+[license-url]: https://github.com/Berabjesus/Library/development/LICENSE
