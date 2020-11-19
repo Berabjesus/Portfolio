@@ -18,7 +18,7 @@
 - Bootstrap
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Ethiopia-on-Rails
+[contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Library
 [contributors-url]: https://github.com/Berabjesus/Ethiopia-on-Rails/contributors
 [forks-shield]: https://img.shields.io/github/forks/Berabjesus/Ethiopia-on-Rails
 [forks-url]:https://github.com/Berabjesus/Ethiopia-on-Rails/network/members
