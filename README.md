@@ -5,7 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![License: MIT][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 ## Live demo
 - [Live demo](https://berabjesus.github.io/Portfolio/)
