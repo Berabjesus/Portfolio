@@ -132,7 +132,6 @@
 /*** 6.0 Section 2 ***/
 .section-2-projects-container {
   position: relative;
-  height: 0;
   overflow-y: hidden;
 }
 
@@ -144,15 +143,21 @@
   left: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(255, 255, 255, 0.11) 70%);
   backdrop-filter: blur(3px);
+  transition: all 0.4s linear;
 }
 
 .section-2-image-container {
   position: absolute;
   left: 0;
+  transition: all 0.4s linear;
 }
 
 .section-2-image-container img {
   object-position: top;
+}
+
+.section-2-projects-container:hover .section-2-image-container {
+  box-shadow: 1px 1px 10px rgb(56, 56, 56);
 }
 
 .section-2-description,
@@ -271,6 +276,7 @@
   }
 
   .section-2-projects-container {
+    /* height: auto; */
     padding-bottom: 75%;
   }
 
@@ -280,6 +286,20 @@
 
   .section-2-projects-container::after {
     width: 100%;
+    backdrop-filter: blur(1px);
+  }
+
+  @supports (-webkit-text-stroke: unset) {
+    .section-2-description h2 {
+      -webkit-text-stroke: unset;
+    }
+  }
+
+  .section-2-description h2 {
+    background-color: var(--theme-1);
+    color: white;
+    -webkit-text-stroke: unset;
+    text-shadow: unset;
   }
 
   .hover:hover .hidden-btn {
