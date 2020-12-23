@@ -18,9 +18,7 @@
 - Bootstrap
 
 
-
-
-[contributors-shield]: https://github.com/Berabjesus/Portfolio
+[contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Portfolio
 [contributors-url]: https://github.com/Berabjesus/Portfolio/contributors
 [forks-shield]: https://img.shields.io/github/forks/Berabjesus/Portfolio
 [forks-url]:https://github.com/Berabjesus/Portfolio/network/members
