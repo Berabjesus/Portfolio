@@ -20,13 +20,13 @@
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/Berabjesus/Library
-[contributors-url]: https://github.com/Berabjesus/Library/contributors
-[forks-shield]: https://img.shields.io/github/forks/Berabjesus/Library
-[forks-url]:https://github.com/Berabjesus/Library/network/members
-[stars-shield]: https://img.shields.io/github/stars/Berabjesus/Library
-[stars-url]: https://github.com/Berabjesus/Library/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Berabjesus/Library
-[issues-url]: https://github.com/Berabjesus/Library/issues
+[contributors-shield]: https://github.com/Berabjesus/Portfolio
+[contributors-url]: https://github.com/Berabjesus/Portfolio/contributors
+[forks-shield]: https://img.shields.io/github/forks/Berabjesus/Portfolio
+[forks-url]:https://github.com/Berabjesus/Portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/Berabjesus/Portfolio
+[stars-url]: https://github.com/Berabjesus/Portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Berabjesus/Portfolio
+[issues-url]: https://github.com/Berabjesus/Portfolio/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license-url]: https://github.com/Berabjesus/Library/development/LICENSE
+[license-url]: https://github.com/Berabjesus/Portfolio/development/LICENSE
