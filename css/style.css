@@ -135,6 +135,7 @@ html {
 }
 
 /*** 6.0 Section 2 ***/
+
 .section-2-projects-container {
   position: relative;
   overflow-y: hidden;
@@ -149,7 +150,7 @@ html {
   left: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(255, 255, 255, 0.11) 70%);
   border-radius: 5px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1.5px);
   transition: all 0.2s linear;
 }
 
@@ -204,26 +205,6 @@ html {
 
 .section-2-custom-width {
   width: 95%;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @supports (-webkit-text-stroke: 1px rgba(0, 0, 0, 0.918)) {
@@ -365,5 +346,27 @@ html {
 @media screen and (min-width: 992px) {
   .section-2-projects-container {
     padding-bottom: 35%;
+  }
+}
+
+/*** 10.0 animations ***/
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
