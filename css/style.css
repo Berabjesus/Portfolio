@@ -137,6 +137,7 @@ html {
 .section-2-projects-container {
   position: relative;
   overflow-y: hidden;
+  border-radius: 5px;
 }
 
 .section-2-projects-container::after {
@@ -146,14 +147,16 @@ html {
   height: 100%;
   left: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(255, 255, 255, 0.11) 70%);
-  backdrop-filter: blur(3px);
-  transition: all 0.4s linear;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s linear;
 }
 
 .section-2-image-container {
   position: absolute;
   left: 0;
-  transition: all 0.4s linear;
+  border-radius: 5px;
+  transition: all 0.2s linear;
 }
 
 .section-2-image-container img {
