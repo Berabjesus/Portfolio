@@ -10,6 +10,7 @@
 *  7.0 - Section 3
 *  8.0 - footer
 *  9.0 - Media Queries
+* 10.0 - animations
 */
 
 /*** 1.0 Color variables ***/
@@ -164,7 +165,7 @@ html {
 }
 
 .section-2-projects-container:hover .section-2-image-container {
-  box-shadow: 1px 1px 10px rgb(56, 56, 56);
+  box-shadow: -2px 1px 8px rgb(56, 56, 56);
 }
 
 .section-2-description,
@@ -173,6 +174,9 @@ html {
   left: 0;
   bottom: 0;
   z-index: 99;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  animation: fadeIn 0.2s forwards linear;
 }
 
 .hidden-btn {
@@ -194,11 +198,32 @@ html {
 }
 
 .hover:hover .section-2-description {
-  display: none;
+  display: block;
+  animation: fadeOut 0.2s linear forwards;
 }
 
 .section-2-custom-width {
   width: 95%;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @supports (-webkit-text-stroke: 1px rgba(0, 0, 0, 0.918)) {
