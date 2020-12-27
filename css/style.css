@@ -125,6 +125,7 @@ html {
   width: 75%;
 }
 
+
 /*** 5.0 Section 1 ***/
 
 .section-1-header::after {
@@ -356,6 +357,7 @@ html {
     opacity: 1;
     visibility: visible;
   }
+
   100% {
     visibility: hidden;
     opacity: 0;
@@ -366,6 +368,7 @@ html {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
