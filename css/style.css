@@ -181,6 +181,14 @@ html {
   animation: fadeIn 0.2s forwards linear;
 }
 
+@supports (-webkit-text-stroke: 1px rgba(0, 0, 0, 0.918)) {
+  .section-2-description h2 {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.925);
+    -webkit-text-fill-color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.37);
+  }
+}
+
 .hidden-btn {
   left: unset;
   display: none;
@@ -206,14 +214,6 @@ html {
 
 .section-2-custom-width {
   width: 95%;
-}
-
-@supports (-webkit-text-stroke: 1px rgba(0, 0, 0, 0.918)) {
-  .section-2-description h2 {
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.925);
-    -webkit-text-fill-color: white;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.37);
-  }
 }
 
 /*** 7.0 Section 3 ***/
