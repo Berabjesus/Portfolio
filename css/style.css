@@ -242,6 +242,10 @@ html {
   background-color: var(--hero);
 }
 
+.contact-desc {
+  font-size: 3vw ;
+}
+
 /*** 9.0 Media Queries ***/
 
 @media screen and (max-width: 574px) {
@@ -298,7 +302,6 @@ html {
 
   .section-2-projects-container::after {
     width: 100%;
-    backdrop-filter: blur(1px);
   }
 
   @supports (-webkit-text-stroke: unset) {
