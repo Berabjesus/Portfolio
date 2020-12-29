@@ -156,14 +156,14 @@ html {
 }
 
 .section-2-projects-container::after {
-  background-color: rgba(255, 255, 255, .9);
+  /* background-color: rgba(255, 255, 255, .9); */
 }
 
-@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+@supports ((-webkit-backdrop-filter: blur(1.5px)) or (backdrop-filter: blur(1.5px))) {
   .section-2-projects-container::after{
-    background-color: rgba(255, 255, 255, .5);
-    -webkit-backdrop-filter: blur(2em);
-    backdrop-filter: blur(2em);
+    /* background-color: rgba(255, 255, 255, .5); */
+    -webkit-backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(1.5px);
   }
 }
 
