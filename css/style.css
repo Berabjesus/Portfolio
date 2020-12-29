@@ -243,7 +243,7 @@ html {
 }
 
 .contact-desc {
-  font-size: 3vw ;
+  font-size: 2rem;
 }
 
 /*** 9.0 Media Queries ***/
@@ -302,6 +302,10 @@ html {
 
   .section-2-projects-container::after {
     width: 100%;
+  }
+
+  .contact-desc {
+    font-size: 1.5rem;
   }
 
   @supports (-webkit-text-stroke: unset) {
