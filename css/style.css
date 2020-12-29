@@ -115,6 +115,7 @@ html {
 /*** 4.0 Main Container ***/
 .main {
   background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero);
+  box-shadow:inset 1px -3px 40px 10px rgba(0, 0, 0, 0.356);
 }
 
 .hero {
@@ -151,7 +152,7 @@ html {
   left: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(255, 255, 255, 0.11) 70%);
   border-radius: 5px;
-  filter: blur(1.5px); 
+  filter: blur(1px); 
   transition: all 0.1s linear;
 }
 
