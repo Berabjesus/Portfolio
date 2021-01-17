@@ -136,6 +136,10 @@ html {
   border-top: 3px solid black;
 }
 
+.gif {
+  width: 50%;
+}
+
 /*** 6.0 Section 2 ***/
 
 .section-2-projects-container {
