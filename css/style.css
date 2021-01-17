@@ -115,7 +115,7 @@ html {
 /*** 4.0 Main Container ***/
 .main {
   background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero);
-  box-shadow:inset 1px -3px 40px 10px rgba(0, 0, 0, 0.356);
+  box-shadow: inset 1px -3px 40px 10px rgba(0, 0, 0, 0.356);
 }
 
 .hero {
@@ -158,19 +158,19 @@ html {
   left: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(255, 255, 255, 0.11) 70%);
   border-radius: 5px;
-  filter: blur(1px); 
+  filter: blur(1px);
   transition: all 0.1s linear;
 }
 
-@supports not ((backdrop-filter: blur(1.5px)) or (-webkit-backdrop-filter: blur(1.5px))){
-  .section-2-projects-container::after{
+@supports not ((backdrop-filter: blur(1.5px)) or (-webkit-backdrop-filter: blur(1.5px))) {
+  .section-2-projects-container::after {
     background-color: rgba(255, 255, 255, 0.178);
-    filter: blur(2.5px); 
-  } 
+    filter: blur(2.5px);
+  }
 }
 
 @supports ((-webkit-backdrop-filter: blur(1.5px)) or (backdrop-filter: blur(1.5px))) {
-  .section-2-projects-container::after{
+  .section-2-projects-container::after {
     -webkit-backdrop-filter: blur(1.5px);
     backdrop-filter: blur(1.5px);
   }
@@ -317,7 +317,6 @@ html {
   .tank_game_gif {
     height: 300px;
   }
-  
 
   .section-2-projects-container {
     padding-bottom: 75%;
