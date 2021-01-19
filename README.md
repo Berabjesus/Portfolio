@@ -9,7 +9,7 @@
 
 
 ## Live demo
-- [Live demo](http://bereketababu.me/)
+- [Live demo](https://bereketababu.me/)
 ## Screenshot
 
 ![screenshot](assets/images/BereketBeshane-Portfolio.png)
