@@ -87,7 +87,7 @@ html {
 /*** 3.0 Header ***/
 
 .header {
-  background-color: var(--header);
+  background-color: var(--hero);
 }
 
 .navbar-toggler-icon,
@@ -97,7 +97,6 @@ html {
   height: auto;
   margin: 0;
   padding: 0;
-  background-image: none !important;
   border-bottom: 2px solid #fff;
 }
 
@@ -114,8 +113,7 @@ html {
 
 /*** 4.0 Main Container ***/
 .main {
-  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw, var(--hero);
-  box-shadow: inset 1px -3px 40px 10px rgba(0, 0, 0, 0.356);
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw -10px, var(--hero);
 }
 
 .hero {
