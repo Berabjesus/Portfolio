@@ -84,6 +84,10 @@ html {
   border: 2px dashed red;
 }
 
+.image-border-radius {
+  border-radius: 5px;
+}
+
 /*** 3.0 Header ***/
 
 .header {
@@ -137,7 +141,7 @@ html {
   border-top: 3px solid black;
 }
 
-.tank_game_gif {
+.tank_game-gif {
   min-width: 100%;
   height: 400px;
   filter: brightness(120%);
