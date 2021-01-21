@@ -315,8 +315,8 @@ html {
 
   .main {
     background-size: 350px;
-    background-position-x: 55vw;
-    background-position-y: 300px;
+    background-position-x: calc(100% + 15vh);
+    background-position-y: -15vh;
   }
 
   .section-1-header::after {
@@ -382,6 +382,12 @@ html {
     margin: 0 0 1.5rem 0;
   }
 
+  .main {
+    background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
+    background-size: 450px;
+    background-position-y: 50px;
+  }
+
   .section-2-projects-container {
     padding-bottom: 55%;
   }
@@ -390,6 +396,11 @@ html {
 @media screen and (min-width: 992px) {
   .section-2-projects-container {
     padding-bottom: 35%;
+  }
+
+  .main {
+    background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
+    background-position-y: 100px;
   }
 }
 
