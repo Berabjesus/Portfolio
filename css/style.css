@@ -88,6 +88,9 @@ html {
 
 .header {
   background-color: var(--hero);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 .navbar-toggler-icon,
@@ -113,11 +116,11 @@ html {
 
 /*** 4.0 Main Container ***/
 .main {
-  background: url("../assets/svgs/Illustration-header.svg") no-repeat 58vw -10px, var(--hero);
+  background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
 }
 
 .hero {
-  height: 95vh;
+  height: 100vh;
 }
 
 .side-icons {
