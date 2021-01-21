@@ -295,10 +295,14 @@ html {
     width: 100%;
   }
 
+  .navbar-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+    transition: all 0.2s linear;
+  }
+
   .nav-item {
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem 1rem;
     font-size: 6vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.26);
   }
 
   .nav-item:last-of-type {
