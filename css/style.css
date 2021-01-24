@@ -331,8 +331,8 @@ html {
 
   .main {
     background-size: 350px;
-    background-position-x: calc(100% + 15vh);
-    background-position-y: -15vh;
+    background-position-x: calc(100% + 20vh);
+    background-position-y: -20vh;
   }
 
   .section-1-header::after {
