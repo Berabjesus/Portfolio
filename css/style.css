@@ -80,6 +80,21 @@ html {
   border: var(--theme-1) 3px solid;
 }
 
+.text-hover {
+  position: relative;
+  transition: 0.1s transform linear;
+}
+.text-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  height: 120%;
+  width: 0;
+  transition: all 0.2s linear;
+}
+
 .cborder {
   border: 2px dashed red;
 }
@@ -388,6 +403,32 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .text-hover:hover {
+    transform: scale(1.2);
+    -webkit-animation: setBorder 0.8s 1;
+    animation: setBorder 0.8s 1;
+    animation-fill-mode: forwards
+  }
+  
+  .text-hover:hover::after {
+    width: 100%;
+  }
+  
+  @keyframes setBorder {
+    25% { 
+      border-left: 1px solid white;
+    }
+    50% { 
+      border-top: 1px solid white;
+    }
+    75% { 
+      border-right: 1px solid white;
+    }
+    100% { 
+      border: 1px solid white;
+    }
+  }
+  
   .side-icons {
     position: fixed;
     width: 60px;
