@@ -151,11 +151,13 @@ html {
 
 /*** 4.0 Main Container ***/
 .main {
-  background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
+  background:  no-repeat 100% -10px, var(--hero);
+  overflow-x: hidden !important;
 }
 
 .hero {
   height: 100vh;
+  overflow-x: hidden !important;
 }
 
 .side-icons {
@@ -164,11 +166,19 @@ html {
 
 
 /*** 5.0 Section 1 ***/
-
-/* .section-1-header {
-  white-space: initial;
-  word-wrap: break-word !important;
-} */
+.content {
+}
+.tagcloud {  
+  z-index: 9999;
+  position: absolute !important;
+  font-family: 'Poppins', sans-serif; 
+  width: 0% !important; 
+  top: 10%;
+  left: 75%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffffc4;
+}
 
 .section-1-header::after {
   content: '';
@@ -317,9 +327,23 @@ html {
   .font-sm {
     font-size: 4vw;
   }
+  .tagcloud {  
+    margin-left: 15%;
+    color: #ffffffc4;
+  }
+  .content {
+    display: none;
+  }
+  .tagcloud {  
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .content {
+    display: none;
+  }
+  .tagcloud {  
+  }
   .h1 {
     font-size: 6vw !important;
   }
@@ -354,6 +378,11 @@ html {
     background-size: 350px;
     background-position-x: calc(100% + 25vh);
     background-position-y: -22vh;
+  }
+
+  .tagcloud {  
+    margin-left: 15%;
+    color: #ffffffc4;
   }
 
   .section-1-header::after {
@@ -446,7 +475,7 @@ html {
   }
 
   .main {
-    background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
+    background:  no-repeat 100% -10px, var(--hero);
     background-size: 450px;
     background-position-y: 50px;
   }
@@ -462,7 +491,7 @@ html {
   }
 
   .main {
-    background: url("../assets/svgs/Illustration-header.svg") no-repeat 100% -10px, var(--hero);
+    background:  no-repeat 100% -10px, var(--hero);
     background-position-y: 100px;
   }
 }
