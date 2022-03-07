@@ -165,11 +165,17 @@ html {
 
 /*** 5.0 Section 1 ***/
 
+/* .section-1-header {
+  white-space: initial;
+  word-wrap: break-word !important;
+} */
+
 .section-1-header::after {
   content: '';
   flex: 1 1 0;
   margin: 0 0 0 1rem;
   border-top: 3px solid black;
+  align-self:center ;
 }
 
 .tank_game-gif {
